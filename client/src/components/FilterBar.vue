@@ -102,11 +102,11 @@ export default {
 
 <style scoped>
 .filters-bar {
-  background: #f8fafc;
-  border-bottom: 1px solid #e2e8f0;
-  padding: 0.75rem 0;
+  background: var(--color-bg-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-3) 0;
   position: sticky;
-  top: 70px;
+  top: 0;
   z-index: 90;
 }
 
@@ -141,10 +141,11 @@ export default {
 
 .filter-select {
   padding: 0.4rem 0.75rem;
-  border: 1px solid #cbd5e1;
+  border: 1px solid var(--color-border);
   border-radius: 6px;
-  font-size: 0.813rem;
-  color: #0f172a;
+  font-size: 0.82rem;
+  font-family: var(--font-sans);
+  color: var(--color-fg-primary);
   background: white;
   cursor: pointer;
   transition: all 0.2s;
@@ -158,8 +159,8 @@ export default {
 
 .filter-select:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.1);
 }
 
 .reset-filters-btn {
@@ -168,9 +169,9 @@ export default {
   justify-content: center;
   padding: 0.4rem;
   background: white;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--color-border);
   border-radius: 6px;
-  color: #64748b;
+  color: var(--color-fg-secondary);
   cursor: pointer;
   transition: all 0.2s;
   flex-shrink: 0;
